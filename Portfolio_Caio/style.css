@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+:root 
+{
+    --fundo: #021a46; 
+    --texto: #3d0349;
+}
+
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.navebarra
+{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+} 
+
+.Logos
+{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    vertical-align: middle; 
+}
+
+a[download]
+{
+    color: inherit; 
+}
+
+
+ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color:var(--fundo);
+}
+
+.links a{
+    color:rgb(233, 233, 233)
+}
+.links
+{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#nome 
+{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(214, 215, 226);
+    text-shadow: 0 0 10px rgba(235, 198, 222, 0.9);
+}
+
+.caixa
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img_caixa {
+    position: relative;
+    background-image: url(Imagens/Fuji.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: doidera 15s; 
+}
+
+
+@keyframes doidera
+{
+0% 
+{
+    transform: scale(1.5);
+}
+100%
+{
+    transform: scale(1);
+}
+
+}
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.slogan_texto 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 60px;
+    color: var(--texto);
+    text-shadow: 0 0 15px rgba(255, 0, 170, 0.9);
+}
+
+.primeira-letra
+{
+    color: rgb(10, 177, 243);
+}
+
+.primeiro 
+{
+    text-align: left;
+    margin-right: 0px; 
+}
+
+.segundo 
+{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.terceiro 
+{
+    text-align: left;
+    margin-left: 100px; 
+}
+
+.caixa_eu 
+{
+    width: 100%;
+    height: auto;
+}
+
+.img_fundo 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imagens/Fundo.jpeg'); 
+    background-size: cover;
+    z-index: -1; 
+}
+
+.eu_header 
+{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color:rgb(15, 7, 7);
+    text-shadow: 2px 2px 4px rgba(66, 4, 45, 0.9);
+}
+
+
+.about_me 
+{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+
+.imagem_eu, .texto 
+{
+    margin: 10px; 
+}
+
+
+.imagem_eu 
+{
+    flex: 1;
+}
+
+
+.imagem_eu img 
+{
+    width: 400px;
+    height:500px; 
+}
+
+.img_venceslau
+{
+    flex: 1;
+    text-align: center;
+}
+
+.img_venceslau img
+{
+    width: 400px;
+    height:500px;
+}
+
+.justify
+{
+    text-align: justify;  
+}
+
+#link-fipp 
+{
+    color: #092061; 
+}
+
+
+.texto 
+{
+    color: white;
+    flex: 1;
+    text-align: center; 
+    border: 2px solid #3d0349; 
+    background-color: #4e4848; 
+    padding: 20px;
+}
+
+
+.fonte2
+{
+    font-family: 'Agdasima', sans-serif;
+}
+
+.destaque
+{
+    font-weight: bold; 
+    color: #ffffff; 
+    background-color:#04154d;
+}

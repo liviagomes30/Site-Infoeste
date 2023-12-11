@@ -1,0 +1,45 @@
+/* 
+--- COLORS
+
+-- Primary: #003710
+
+-Tints (Mais clara):  #288542 #00D13B #008526 #96f093 #83ff89
+-Shades (Mais escura): #185229 #001005 #000b03
+
+-Cinza: #453943
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar,
+.bg::-webkit-scrollbar {
+  display: none;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+
+.maxWidthHeight {
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}

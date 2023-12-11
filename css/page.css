@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+  
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+}
+
+.bg {
+    max-width: 920px;
+    height: 100lvh;
+    display: flex;
+    padding: 10px;
+    background-color: #003710;
+    flex-flow: column;
+    overflow: scroll;
+}
+
+.row {
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.row-reversed {
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reversed nowrap;
+}
+
+.imagem {
+    width: 500em;
+    height: 42em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2em;
+}
+.image_header {
+    display: flex;
+    flex-shrink: 0;
+    width: 80em;
+    height: 40em;
+    margin: 2% auto;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url(../imgs/logo_maratona.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imagem:hover {
+    box-shadow: -1px -1px 35px 0px rgba(255, 255, 255, 0.6) inset;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.sidetext {
+    margin: 2em;
+    color: white;
+    font-size: 2em;
+    height: fit-content;
+}
+
+.mainline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80em;
+    align-items: center;
+}
+.mainline .sidetext {
+    margin: 0;
+    font-size: 8em;
+    font-weight: 600;
+    height: 3em;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#fippetec { 
+    border-radius: 1em;
+    width: 80%;
+}
+

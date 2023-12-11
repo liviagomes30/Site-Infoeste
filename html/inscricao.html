@@ -1,0 +1,69 @@
+<section class="programacao-box-cards inscricao" id="inscricao">
+
+    <head class="program-container center">
+
+        <div class="program-container flex-column center">
+            <div class="cards-container-inscricao">
+                <h1 class="title-box-program">Faça já sua inscrição!</h1>
+                <div class="card__enrollment">
+                    <div class="program-card__enrollment card1__enrollment">
+                        <div class="content-box-card__enrollment">
+                            <div class="content-descr-card__enrollment">
+                                <p class="card-content__enrollment">
+
+                                    <form name="Cadastro" action="gravarAluno" method="post"><br /><br />
+                                        <input type="hidden" id="txtId" name="txtId" value="%d"/>
+                                        <ul class="list-program">
+                                            <li class="program-item inscr "><img src="../imgs/seta.png" alt="ícone seta" class="seta-list">
+                                                <a class="program-link   font-size__enrollment"><label class="font-size__enrollment"
+                                                    for="tnome">Nome:</label>
+                                                <input type="text" id="tnome" name="tnome" size="30" maxlength="55"
+                                                    placeholder="Digite seu nome" required="required" value="%s" /></a>
+                                            </li>
+
+                                            <li class="program-item inscr "><img src="../imgs/seta.png" alt="ícone seta" class="seta-list">
+                                                <a class="program-link   font-size__enrollment"><label for="temail">E-mail:</label>
+                                                <input type="email" id="temail" name="temail" size="30" maxlength="55"
+                                                    placeholder="Digite seu E-mail" required="required" value="%s"/></a>
+                                            </li>
+
+                                            <li class="program-item inscr "><img src="../imgs/seta.png" alt="ícone seta" class="seta-list">
+                                                <a class="program-link   font-size__enrollment"><label for="telefone">Telefone:</label>
+                                                <input type="tel" id="telefone" name="telefone" size="30" maxlength="30" title="99111-1111"
+                                                    placeholder="Digite seu telefone" value="%s"></a>
+
+                                            </li>
+
+                                            <li class="program-item inscr "><img src="../imgs/seta.png" alt="ícone seta" class="seta-list">
+                                                <a class="program-link   font-size__enrollment"><label for="tnome">Curso:</label>
+                                                </a>
+                                                <select name="selOpcao" class="checkboxx" value="%d">
+                                                    <option value="1" selected="selected"> Sistemas de Informação </option>
+                                                    <option value="2"> Ciência da Computação </option>
+                                                    <option value="3"> Engenharia de Software </option>
+                                                    <option value="4"> Análise e Desenvolvimento de Sistemas </option>
+                                                    <option value="5"> Outros </option>
+                                                </select>
+                                            </li><br>
+
+                                            <br />
+
+                                            <div class="botoes">
+                                                <input class="botao" type="submit" name="bgravar" id="bgravar" value="OK" />
+                                                <input class="botao" type="reset" name="blimpar" value="LIMPAR" />
+                                            </div>
+                                        </ul>
+                                        <br>
+
+                                    </form>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br />
+    </head>
+</section>

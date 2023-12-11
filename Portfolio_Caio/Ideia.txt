@@ -1,0 +1,28 @@
+Cabeçalho contendo nome
+
+A esquerda, opções > quem sou? > redes sociais > onde estudo > certificados > projetos
+
+A direita, minha foto
+
+Rodapé, "feito por Caio Lomas"
+
+Imagens > fuji > projetos aleatório > eu > pv 
+
+Importante: site ser responsivo, ter uma fonte chamativa nos títulos, tentar deixar uma cor
+padronizada e com bom degradê, sem poluição
+
+slogan - Vamos realizar sonhos?
+
+
+	Nasci e fui criado em Presidente Venceslau - SP, onde ainda moro apesar de ter ficado por 2 anos em 
+Presidente Prudente com meu irmão, dos 15 aos 17.
+	Amo viajar, conhecer pessoas novas, culturas novas, comidas e paisagens novas. Acredito que todos devessem
+correr atrás de seus próprios sonhos, adquirir novas experiências e ajudar quem puder a fazer o mesmo.
+Ainda quando criança, o sonho de ir para o Japão veio a tona e até hoje mantenho ele, com um pequeno acréscimo:
+Quero escalar o Monte Fuji. Sei que parece um desejo bobo, mas tem um significado muito importante para mim.
+	Com todos esses desejos, só me faltava ter um vislumbre de como realizá-los, e tal veio em um momento
+triste, a morte do meu pai, após isso deixei de apenas fantasiar e fui atrás de conseguir o que queria, começando
+assim a faculdade de Sistemas de Informação na FIPP - Unoeste, sendo esse o primeiro grande passo para alcançar
+meus objetivos. 
+	Eu também espero um dia conseguir ter condições para ajudar quem eu puder, não só financeiramente mas
+também com conhecimento, boas risadas e boas festas, isso enquanto vou construindo ótimas amizades ao redor do mundo.

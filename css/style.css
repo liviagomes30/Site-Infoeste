@@ -1,0 +1,722 @@
+/* 
+--- COLORS
+
+-- Primary: #003710
+
+-Tints (Mais clara):  #288542 #00D13B #008526 #96f093 #83ff89
+
+-Shades (Mais escura): #185229 #001005
+
+-Cinza: #453943
+*/
+
+.hero {
+  background-image: url("../imgs/INFOESTE.png");
+  background-position: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: grid;
+  grid-template-rows: 0.05fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.hero-form {
+  background-color: #001005;
+
+  display: grid;
+  grid-template-rows: 0.05fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.hero-header{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  background-color: #000b03;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+.menu-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-uno-box {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.logo-uno,
+.logo-fipp {
+  height: 3rem;
+  transition: 0.5s;
+}
+
+.logo-uno:hover,
+.logo-fipp:hover {
+  opacity: 0.5;
+}
+
+.linha {
+  background-color: #fff;
+  width: 0.1rem;
+  height: 3rem;
+}
+
+.menu-itens {
+  font-family: 'Barlow Condensed', sans-serif;
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+  justify-self: end;
+  padding: 1rem 2rem;
+}
+
+.menu-item {
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+  color: #fff;
+  padding: 0.4rem;
+}
+.menu-item#edant {
+  width: max-content;
+}
+
+.menu-item:hover {
+  background: rgba(72, 212, 67, 0.6);
+  box-shadow: 0 0 5px #96f093,
+    0 0 25px #96f093,
+    0 0 50px #96f093,
+    0 0 100px #96f093;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+}
+
+.text-hero {
+  grid-row: 2;
+  justify-self: center;
+  margin-bottom: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.6rem;
+}
+
+.number-hero {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  justify-self: start;
+  font-size: 5rem;
+  margin-bottom: -3rem;
+  margin-left: 1rem;
+
+  color: #ffffff00;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(150, 240, 147, 0.6);
+}
+
+.title-hero {
+  font-size: 10rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transform: 0.5s;
+  color: #96f093;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.title-hero:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89,
+    0 0 100px #83ff89;
+  transition: 0.5s;
+}
+
+.data-hero-box {
+  font-family: 'Barlow Condensed', sans-serif;
+  justify-self: end;
+  font-size: 2.4rem;
+  margin-top: -3rem;
+  margin-right: 1rem;
+  color: rgba(150, 240, 147, 0.6);
+}
+
+.list-program {
+  list-style: none;
+
+}
+
+.list-program li {
+  padding: 0.8rem 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem;
+  margin-left: 2rem;
+}
+
+.program-item {
+  display: flex;
+  align-items: center;
+}
+
+.program-item-teste {
+  display: flex;
+  align-items: start;
+}
+
+.program-link:link,
+.program-link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.program-link:hover,
+.progam-link:active {
+  text-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89,
+    0 0 100px #83ff89;
+}
+
+.seta-list {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+
+/* Seção - Programação */
+
+.programacao-box-cards {
+  background-color: #185229;
+  padding: 4rem;
+
+}
+
+.title-box-program {
+  font-size: 6rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #96f093;
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+}
+
+
+.title-box-program:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89;
+}
+
+.program-container {
+  padding: 4rem 2rem;
+}
+
+.cards-container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100%;
+  width: 35rem;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+
+}
+
+.card:hover {
+  box-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89;
+  border: 2px solid #fff;
+  background-color: rgba(156, 255, 161, 0.5);
+}
+
+.program-card {
+  padding-top: 10rem;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  /* ease-in-out: realiza a transição com o início e final lentos */
+  border-radius: 1rem;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card:hover {
+  background-position: 80% 20%;
+  /* */
+
+}
+
+.card1 {
+  background-image: url("../imgs/palestra.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.card2 {
+  background-image: url("../imgs/img-festa-linux.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.card3 {
+  background-image: url("../imgs/maratona.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.card4 {
+  background-image: url("../imgs/palestra2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.content-box-card {
+  height: 100%;
+  width: 100%;
+  right: -100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 2rem 5rem -2.5rem #001005;
+  transition: all 0.8s ease-in-out;
+  padding: 5rem 2.5rem 2.5rem 2.5rem;
+
+  position: relative;
+}
+
+.program-card:hover .content-box-card {
+  right: 0;
+}
+
+.card-title {
+  color: #000b03;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-content {
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+  color: #000b03;
+}
+
+.link-card {
+  display: flex;
+}
+
+.see-more:link,
+.see-more:visited {
+  display: block;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1.5rem;
+  text-decoration: none;
+
+  padding: 0.2rem 0.4rem;
+
+  background-color: #003710;
+}
+
+.see-more:hover,
+.see-more:active {
+  box-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89;
+}
+
+.date-box-card {
+  position: absolute;
+  top: -2.5rem;
+  left: 2.5rem;
+  height: 6rem;
+  width: 6rem;
+  background-color: rgba(0, 16, 5, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: #185229 0 2rem 6rem 0, #288542 0 1.8rem 3.6rem -1.8rem;
+}
+
+.date-box-card span {
+  display: block;
+  text-align: center;
+}
+
+.date-box-card .month {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.date-box-card .date {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00D13B;
+}
+
+/*Inscrição*/
+.programacao-box-cards.inscricao {
+  background-color: #28854244;
+  grid-row: 2;
+}
+
+.cards-container-inscricao {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.font-size__enrollment {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  color: white;
+  line-height: 1.2rem;
+}
+
+.card__enrollment {
+  width: 80rem;
+  /* width: 35rem; */
+  padding: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.card1__enrollment {
+  background-color: rgba(255, 255, 255, 0.116);
+  border-radius: 1rem;
+}
+
+.card__enrollment:hover {
+  box-shadow: 0 0 5px #83ff89,
+    0 0 25px #83ff89,
+    0 0 50px #83ff89;
+  border: 2px solid #fff;
+}
+
+.program-card__enrollment:hover .content-box-card__enrollment {
+  right: 0;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 2em;
+}
+
+.checkbox {
+  display: flex;
+  gap: 1rem;
+}
+
+.check {
+  margin-left: 4rem;
+}
+
+.botao {
+  border: 0;
+  background-color: rgba(0, 16, 5, 0.425);
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.botao:hover {
+  box-shadow: 0 0 5px #83ff89;
+  border: 1px solid #fff;
+}
+
+input {
+  background-color: rgba(0, 16, 5, 0.425);
+  border-radius: 1rem;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.program-item.inscr.center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-table{
+  height: 100%;
+  grid-row: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 6rem 4rem;
+}
+
+.tabela{
+
+  border-collapse: collapse;
+  width: 100%;
+
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  
+}
+
+.tabela th, .tabela td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tabela th {
+  background-color: #001005;
+}
+
+.tabela tr:nth-child(even) {
+  background-color: #003710;
+}
+
+.tabela a {
+  text-decoration: none;
+  margin-right: 5px;
+  color: #288542;
+}
+
+.tabela a:hover {
+  text-decoration: underline;
+}
+
+
+/* Seção Contato */
+
+
+.contato-box {
+  background-color: #83ff89;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
+}
+
+.title-contato {
+  font-size: 6rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #288542;
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+}
+
+.title-contato:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #288542,
+    0 0 25px #288542,
+    0 0 50px #288542;
+}
+
+.dados-fipp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.content-dados {
+  gap: 1rem;
+  background-color: rgba(0, 16, 5, 0.15);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  min-height: 25rem;
+
+}
+
+.content-dados h3 {
+  font-size: 2.6rem;
+}
+
+.content-dados h4 {
+  font-size: 2.4rem;
+}
+
+.content-dados p {
+  font-size: 2rem;
+}
+
+
+.loc-fipp-iframe {
+  min-height: 25rem;
+}
+
+
+.box-cards-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 30rem;
+}
+
+.card-profile {
+  position: relative;
+  width: 22rem;
+  height: 12rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 3.5rem 8rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+
+  align-self: end;
+}
+
+.card-profile:hover {
+  height: 20rem;
+}
+
+.img-box-card {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1rem;
+  box-shadow: 0 3.5rem 8rem rgba(0, 0, 0, 0.35);
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-profile:hover .img-box-card {
+  width: 17rem;
+  height: 17rem;
+}
+
+.img-box-card.livia{
+  background-image: url("../PortfolioLivia/fotoLivia.jpg");
+}
+
+.img-box-card.andressa {
+  background-image: url("../Portfolio_Andressa/public/foto-inicial.png");
+}
+
+
+.img-box-card.caio {
+  background-image: url("../Portfolio_Caio/Imagens/Caio.jpg");
+}
+
+.img-box-card.leo {
+  background-image: url("../Portfolio_Leo/eu.jpg");
+}
+
+
+
+.content-card-profile {
+  width: 100%;
+  height: 100%;
+
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.content-card-profile .details-hidden {
+  transform: translateY(8rem);
+}
+
+.card-profile:hover .content-card-profile .details-hidden {
+  transform: translateY(4rem);
+}
+
+.card-profile:hover .content-card-profile .name-profile {
+  transform: translateY(4rem);
+  margin-top: 7rem;
+}
+
+
+.content-card-profile .name-profile {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #003710;
+  line-height: 1.2rem;
+}
+
+.content-card-profile .details-hidden {
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.7;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.content-card-profile .details-hidden .see-more:link,
+.content-card-profile .details-hidden .see-more:visited {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+  background-color: #003710;
+}
+
+
+
+h1#top {
+  text-align: center;
+  font-size: 48pt;
+  color: white;
+}
+
+.checkboxx {
+  width: 15rem;
+  margin-left: 1rem;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="box">
+                <div class="item">
+                    <img src="imgs/logoUnoesteResponsiva.png" alt="logo" id="logo">
+                    <div class="item">
+                        Leonardo Neves
+                    </div>
+                </div>
+                <div class="item">
+                    CV-AP2
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainframe">
+        <div class="box1">
+            <img src="imgs/foto_eu.jfif" alt="foto" id="perfil"> <br/>
+            <div class="sub_left">
+                Estudante: Sistemas de Informaçao na Faculdade de Informática de Presidente Prudente
+            </div>
+            <div class="year">
+                Segundo Termo
+            </div> <br>
+            <div class="links">
+                <ul>
+                    <li><a href="#trabalhos">trabalhos</a></li>
+                    <li><a href="#habilidades">habilidades</a></li>
+                    <li><a href="#experiencias">experiencias</a></li>
+                </ul>
+            </div>
+            <a href="https://www.linkedin.com/in/leonardo-neves-a80732142">linkedin</a>
+        </div>
+        <div class="box2">
+            <a name="trabalhos"></a>
+            <h1>trabalhos !não-notáveis</h1>
+            <div class="codigo_carousel">
+                <code class="code1">
+                    int regra(const void *a, const void *b){<br/>
+                        &emsp;int *x = (int *) a;<br/>
+                        &emsp;int *y = (int *) b;<br/>
+                        &emsp;return *x - *y;<br/><br/>
+                    int turn(int arr[], size_t strsize){<br/>
+                        &emsp;qsort(arr,strsize,sizeof(int),regra);<br/>
+                    }
+                </code>
+                <code class="code2">
+                    bool Tester (int x){<br/>
+                        &emsp;int i=1, soma=0;<br/>
+                        &emsp;while(i < x)<br/>
+                        &emsp;{<br>
+                            &emsp;&emsp;if(x%i==0)<br/>
+                            &emsp;&emsp;soma=soma+i;<br/>
+                            &emsp;i++;<br/>
+                            &emsp;}<br/>
+                        return soma==x ? true : false;<br/>
+                    }<br/><br/>
+                    
+                    int main(){<br/>
+                        int num; bool res;<br/>
+                        scanf(" %d", &num);<br/>
+                        Tester(num)==true ? printf("Perfeito") : printf<br/>("Nao-perfeito");<br/>
+                    
+                        return 0;<br/>
+                    }
+                </code>   
+
+            </div>  
+            
+
+            <a name="habilidades"></a>
+            <h1>pseudo-habilidades</h1>
+            <section class="imgs">
+                <img src="imgs/c-programming.png" alt="placeholder" class="placeholder">
+                <img src="imgs/JavaScript.png" alt="placeholder" class="placeholder">
+                <img src="imgs/python.png" alt="placeholder" class="placeholder">
+            </section>
+            
+            <a name="experiencias"</a>  
+            <section class="exp">
+                <h1>experiencias profissionais</h1> 
+                <div class="workbox-left">
+                    <img src="imgs/drogasil2048.png" alt="drogalogo">
+                    <div class="workbox-texto">
+                        2 anos de experiencia no cargo de atendimento/balconista. <br/>
+                        Foco grande no desenvolvimento de vendas e soluçao pro cliente.
+                    </div>
+                </div>
+                <div class="workbox-right">
+                    <img src="imgs/scada.png" alt="scada">
+                    <div class="workbox-texto">
+                        1.5 ano de experiencia no atendimento e preparo de 
+                        bebidas no segmento de cafeterias
+                    </div>
+                </div>
+            </section>
+             
+
+
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

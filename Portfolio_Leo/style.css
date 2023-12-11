@@ -1,0 +1,173 @@
+
+:root {
+    --fundo-boxes:rgba(0, 0, 0, 0.263);
+    --drawtracers:rgba(14,14,14)
+}
+::-webkit-scrollbar{
+    size: 0px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+a:link { 
+    color: white;
+}
+
+ul {
+    background-color: var(--fundo-boxes);
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(67, 67, 67);
+    background-image: url(imgs/pattern.png);
+    background-position: center;
+    background-size: fill;
+    background-blend-mode:multiply;
+    background-repeat: round;
+}
+
+header{
+    width: 100%;
+    background-color: var(--drawtracers);
+}
+
+.box{
+    color: rgb(255, 255, 255);
+    font-size: 28pt;
+    height: 50px;
+    width: 800px;
+    display: flex;
+    place-content: space-between;
+    margin: auto;
+    padding: 10px;
+    font-weight: 600;
+}
+
+#logo{
+    margin-right: 10px;
+    position: relative;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.mainframe {
+    margin: 2vh auto;
+    display: flex;
+    color: var(--drawtracers);
+    border-radius: 5px;
+    height: 80vh;
+    width: 800px;
+    border-style: solid;
+    backdrop-filter: blur(5px);
+}
+
+.mainframe > .box1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: aliceblue;
+    width: 20%;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-right-style: solid;
+    border-right-color: var(--drawtracers);
+    background-color: var(--fundo-boxes);
+}
+
+img#perfil {
+    width: fit;
+    border: 4px solid var(--drawtracers);
+}
+.year{
+    background-color: var(--fundo-boxes);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box2::-webkit-scrollbar{
+    width: 0px;
+}
+.box2{
+    color: white;
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: scroll;
+}
+
+.codigo_carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    height: fit-content;
+    /*
+    eu tive um problema grave com esse
+    overflow aqui, eu queria fazer um
+    carrossel de pequenos codigos com 
+    rolagem porém simplesmente 
+    some a div inteira ao usar o overflow
+    --> height: 400px;
+    --> overflow: auto;
+    */
+}
+.codigo_carousel code {
+    flex-shrink: 0;
+    text-align: left;
+    margin: 10px;
+    background-color: var(--fundo-boxes);
+    height: 100px;
+    overflow: auto;
+}
+section.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img.placeholder {
+    background-color: var(--fundo-boxes);
+    margin: 10px;
+    padding: 10px;
+    width: 35%;
+}
+img.placeholder:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+.workbox-left {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: left;
+    color: white;
+}
+.workbox-right {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    text-align: right;
+    color: white;
+}
+.workbox-left > img,.workbox-right > img {
+    width: 25%;
+    background-color: var(--fundo-boxes);
+}
+.workbox-left > .workbox-texto,.workbox-right > .workbox-texto {
+    height: fit-content;
+    font-weight: 600;
+    margin: 10px;
+    background-color: var(--fundo-boxes);
+}
+
